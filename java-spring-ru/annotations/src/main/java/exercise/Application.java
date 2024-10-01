@@ -14,7 +14,8 @@ public class Application {
         for (Method m : address.getClass().getDeclaredMethods()) {
             for (Annotation a : m.getDeclaredAnnotations()) {
                 if (a.annotationType() == Inspect.class) {
-                    System.out.println("Method " + m.getName() + " returns a value of type " + m.getReturnType().getSimpleName());
+                    System.out.println("Method " + m.getName() +
+                            " returns a value of type " + m.getReturnType().getSimpleName());
                 }
             }
         }
