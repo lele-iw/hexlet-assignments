@@ -1,0 +1,10 @@
+---
+
+spring:
+  jpa:
+    show-sql: true
+  output:
+    ansi:
+      enabled: always
+server:
+  port: 8083
